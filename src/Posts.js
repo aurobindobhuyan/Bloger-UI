@@ -16,14 +16,14 @@ const Posts = (props) => {
      }, [])
 
      return (
-          <div>
+          <>
                <h1>Total Posts - {posts.length}</h1>
                <ul>
                     {
                          posts.map(ele => <li key={ele.id}><Link to={`/posts/${ele.id}`}>{ele.title}</Link></li>)
                     }
                </ul>
-          </div>
+          </>
      )
 }
 

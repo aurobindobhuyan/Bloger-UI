@@ -6,10 +6,10 @@ import Posts from './Posts'
 import UserPosts from "./UserPosts"
 import ShowDetails from "./ShowDetails"
 
-const App = (props) => {
+const App = () => {
 
      return (
-          <div>
+          <>
                <h1>Blogger Project</h1>
                <ul>
                     <li><Link to="/">Home</Link></li>
@@ -22,7 +22,7 @@ const App = (props) => {
                <Route path="/posts" component={Posts} exact={true} />
                <Route path="/users/:id" component={UserPosts} />
                <Route path="/posts/:id" component={ShowDetails} />
-          </div>
+          </>
      )
 }
 

@@ -28,7 +28,7 @@ const ShowDetails = (props) => {
      }, [])
 
      return (
-          <div>
+          <>
                <h1>User Name - {userName.name}</h1>
                <h2>TITLE : {details.title}</h2>
                <h3>BODY : {details.body}</h3>
@@ -41,7 +41,7 @@ const ShowDetails = (props) => {
                </ul>
                <hr />
                <Link to={`/users/${details.userId}`}>Mor posts from author : {userName.name}</Link>
-          </div>
+          </>
      )
 }
 

@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Home=(props)=>{
+const Home = () => {
 
      return (
-          <div>
-               <h1>Home component</h1>
-          </div>
+          <h1>Home component</h1>
      )
 }
 

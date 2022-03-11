@@ -20,7 +20,7 @@ const UserPosts = (props) => {
      }, [])
 
      return (
-          <div>
+          <>
                <h1>USER NAME : {userName.name}</h1>
                <h3>Posts written by user</h3>
                <ul>
@@ -28,7 +28,7 @@ const UserPosts = (props) => {
                          userPosts.map(ele => <li key={ele.id}><Link to={`/posts/${ele.id}`}>{ele.title}</Link></li>)
                     }
                </ul>
-          </div>
+          </>
      )
 }
 
